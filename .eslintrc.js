@@ -5,7 +5,7 @@ module.exports = {
     browser: true,
   },
   parserOptions: {
-    project: './tsconfig.json',
+    project: "./tsconfig.json",
     ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports
     ecmaFeatures: {
@@ -17,16 +17,16 @@ module.exports = {
       version: "detect", // Tells eslint-plugin-react to automatically detect the version of React to use
     },
   },
-  plugins: ["@typescript-eslint", "react", "prettier"],
+  plugins: ["@typescript-eslint"],
   extends: [
     "eslint:recommended",
+    'plugin:vue/vue3-recommended',
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:react/recommended"
+    'prettier'
   ],
   rules: {
-    "prettier/prettier": "error",
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
   },
