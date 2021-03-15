@@ -12,19 +12,15 @@ module.exports = {
       jsx: true, // Allows for the parsing of JSX
     },
   },
-  settings: {
-    react: {
-      version: "detect", // Tells eslint-plugin-react to automatically detect the version of React to use
-    },
-  },
   plugins: ["@typescript-eslint"],
   extends: [
     "eslint:recommended",
     'plugin:vue/vue3-recommended',
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    'prettier'
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
