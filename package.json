@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --fix --ext .ts,.js,.tsx",
+    "lint:code": "eslint . --fix --ext .ts,.js,.tsx",
+    "lint:style": "stylelint --fix src/**/*.css",
+    "lint": "concurrently -c bgBlue.bold,bgMagenta.bold -n code,style yarn:lint:code yarn:lint:style",
     "serve": "vite preview"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "@vitejs/plugin-vue": "^1.2.3",
     "@vitejs/plugin-vue-jsx": "^1.1.5",
     "@vue/compiler-sfc": "^3.1.1",
+    "concurrently": "^6.2.0",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -25,6 +28,8 @@
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.1.4",
     "typescript": "^4.3.2",
     "vite": "^2.3.7"
