@@ -9,6 +9,23 @@ orbs:
   node: circleci/node@4.1
 
 jobs:
+  setup-yarn:
+    docker:
+      - image: cimg/node:15.1
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore cached lock file
+          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
+      - run:
+          name: Yarn install
+          command: yarn install --immutable
+      - save_cache:
+          name: Cache lock file.
+          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
+          paths:
+            - .yarn/cache
+
   lint-code:
     docker:
       - image: cimg/node:15.1
@@ -30,14 +47,6 @@ jobs:
           name: Restore cached lock file
           key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
       - run:
-          name: Yarn install
-          command: yarn install --immutable
-      - save_cache:
-          name: Cache lock file.
-          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
-          paths:
-            - .yarn/cache
-      - run:
           name: Lint style
           command: yarn lint:style
 
@@ -50,20 +59,19 @@ jobs:
           name: Restore cached lock file
           key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
       - run:
-          name: Yarn install
-          command: yarn install --immutable
-      - save_cache:
-          name: Cache lock file.
-          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
-          paths:
-            - .yarn/cache
-      - run:
           name: Build (production)
           command: yarn build
 
 workflows:
   verification:
     jobs:
-      - lint-code
-      - lint-style
-      - build
+      - setup-yarn
+      - lint-code:
+          requires:
+            - setup-yarn
+      - lint-style:
+          requires:
+            - setup-yarn
+      - build:
+          requires:
+            - setup-yarn
