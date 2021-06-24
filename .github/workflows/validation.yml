@@ -1,37 +1,16 @@
 name: Build and test
 
-on:
-  push:
+on: push
 
 permissions: read-all
 
 jobs:
-  eslint:
-    name: Lint code
+  fixmes:
+    name: FIXME check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Yarn install
-        uses: bahmutov/npm-install@86410ebd5cb59eff8f561d3ea64b9cefdb54de8c # v1.7.7
-      - name: Lint
-        run: yarn lint:code
-
-  stylelint:
-    name: Lint styles
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Yarn install
-        uses: bahmutov/npm-install@86410ebd5cb59eff8f561d3ea64b9cefdb54de8c # v1.7.7
-      - name: Lint
-        run: yarn lint:style
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Yarn install
-        uses: bahmutov/npm-install@86410ebd5cb59eff8f561d3ea64b9cefdb54de8c # v1.7.7
-      - name: Build
-        run: yarn build
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: FIXME check
+        uses: bbugh/action-fixme-check@v1.0.0
