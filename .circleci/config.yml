@@ -28,15 +28,15 @@ jobs:
       - checkout
       - restore_cache:
           name: Restore cached lock file
-          key: v1-yarn-lock-file-{{ checksum "yarn.lock" }}
+          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
       - run:
           name: Yarn install
           command: yarn install --immutable
       - save_cache:
           name: Cache lock file.
-          key: v1-yarn-lock-file-{{ checksum "yarn.lock" }}
+          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
           paths:
-            - $CIRCLE_WORKING_DIRECTORY/.yarn/cache
+            - .yarn/cache
       - run:
           name: Lint style
           command: yarn lint:style
@@ -48,15 +48,15 @@ jobs:
       - checkout
       - restore_cache:
           name: Restore cached lock file
-          key: v1-yarn-lock-file-{{ checksum "yarn.lock" }}
+          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
       - run:
           name: Yarn install
           command: yarn install --immutable
       - save_cache:
           name: Cache lock file.
-          key: v1-yarn-lock-file-{{ checksum "yarn.lock" }}
+          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
           paths:
-            - $CIRCLE_WORKING_DIRECTORY/.yarn/cache
+            - .yarn/cache
       - run:
           name: Build (production)
           command: yarn build
