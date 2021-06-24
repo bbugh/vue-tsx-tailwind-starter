@@ -5,62 +5,12 @@ on: push
 permissions: read-all
 
 jobs:
-  eslint:
-    name: Lint code
+  fixmes:
+    name: FIXME check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - uses: bbugh/cache@2c6138afa1edfcfde8a4c8f3f2db596fbc00ae8b # fork that always saves cache
+      - uses: actions/checkout@v1
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: yarn install --immutable
-      - name: Lint
-        run: yarn lint:code
-
-  stylelint:
-    name: Lint styles
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - uses: bbugh/cache@2c6138afa1edfcfde8a4c8f3f2db596fbc00ae8b # fork that always saves cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: yarn install --immutable
-      - name: Lint
-        run: yarn lint:style
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - uses: bbugh/cache@2c6138afa1edfcfde8a4c8f3f2db596fbc00ae8b # fork that always saves cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: yarn install --immutable
-      - name: Build
-        run: yarn build
+          fetch-depth: 1
+      - name: FIXME check
+        uses: bbugh/action-fixme-check@v1.0.0
