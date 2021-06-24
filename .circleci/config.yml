@@ -47,6 +47,9 @@ jobs:
           name: Restore cached lock file
           key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
       - run:
+          name: Yarn install
+          command: yarn install --immutable --immutable-cache
+      - run:
           name: Lint style
           command: yarn lint:style
 
@@ -58,6 +61,9 @@ jobs:
       - restore_cache:
           name: Restore cached lock file
           key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
+      - run:
+          name: Yarn install
+          command: yarn install --immutable --immutable-cache
       - run:
           name: Build (production)
           command: yarn build
