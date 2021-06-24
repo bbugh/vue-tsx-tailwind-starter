@@ -5232,13 +5232,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"tiny-invariant@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "tiny-invariant@npm:1.1.0"
-  checksum: 64318fbd77c451cfff23b57b9f3aef56594d9cea051a87dc538c9b371f97e8d474eaa2a7cbd60b8aa23f852393152495e8651b197607465fdf9c8ff134043b1b
-  languageName: node
-  linkType: hard
-
 "to-fast-properties@npm:^2.0.0":
   version: 2.0.0
   resolution: "to-fast-properties@npm:2.0.0"
@@ -5488,19 +5481,14 @@ typescript@^4.3.2:
   languageName: node
   linkType: hard
 
-"vite-plugin-checker@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "vite-plugin-checker@npm:0.1.0"
+"vite-plugin-ts-checker@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "vite-plugin-ts-checker@npm:0.1.5"
   dependencies:
     "@babel/code-frame": ^7.12.13
-    log-update: ^4.0.0
     npm-run-path: ^4.0.1
     strip-ansi: ^6.0.0
-    tiny-invariant: ^1.1.0
-    vscode-languageclient: ^7.0.0
-  peerDependencies:
-    vite: ^2.0.0
-  checksum: 36aaebfde582cc8297b983efb465619a69d6ca4e884d0b8ff70075cd4434a1cc022ecf16cd69658ca8aca96bf481703ddab57509644e1bfeb6e9106d622306a0
+  checksum: b964a9d55d70880e558885cf5c07f19f3ac206af743379f468ba2644d9bf97dd14606e811be682b0f26767c5726730695a397d2b3bdbfdd911799f3ab6fdc124
   languageName: node
   linkType: hard
 
@@ -5533,41 +5521,6 @@ typescript@^4.3.2:
   bin:
     vite: bin/vite.js
   checksum: d22efa9b20fec505d8813e87d0faf82a7160283da806487106bede729605b7c2b67ca9a829cd5d7c878c81ec4108e422ebae0e0928fe714265466c0056aa5ce3
-  languageName: node
-  linkType: hard
-
-"vscode-jsonrpc@npm:6.0.0":
-  version: 6.0.0
-  resolution: "vscode-jsonrpc@npm:6.0.0"
-  checksum: 18b262ae7bdc089c1e055fe301bb8cedd56206332b5cc6dc1980a7c7c0dfcd69547768286fb7b4759e8d7b9a953e7913d7e8957ff50721bbc0478358fe46f101
-  languageName: node
-  linkType: hard
-
-"vscode-languageclient@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "vscode-languageclient@npm:7.0.0"
-  dependencies:
-    minimatch: ^3.0.4
-    semver: ^7.3.4
-    vscode-languageserver-protocol: 3.16.0
-  checksum: 68ce6495c2d386b35948d443ea66d820d98e42ba62c2b21303d109b8ac840abe27eac4fd3ce5d2e1ff184e25ced02e4b73e3f62bcc4d270b769bdc5da1fd8979
-  languageName: node
-  linkType: hard
-
-"vscode-languageserver-protocol@npm:3.16.0":
-  version: 3.16.0
-  resolution: "vscode-languageserver-protocol@npm:3.16.0"
-  dependencies:
-    vscode-jsonrpc: 6.0.0
-    vscode-languageserver-types: 3.16.0
-  checksum: b8a0b31433485b440324f66f0c412410cf249fc63e19f465e9ce5c8f1864f862f6fd6bfca21799a94f97d82608731a16067f73018afbab198d4f87ad3e92694e
-  languageName: node
-  linkType: hard
-
-"vscode-languageserver-types@npm:3.16.0":
-  version: 3.16.0
-  resolution: "vscode-languageserver-types@npm:3.16.0"
-  checksum: 49a66a6e0abe74bc5a6356152bf9ecae3a1aceca660489c26af341eccaed93282f2d4cd07b2feac13c4687855aecd0c73fbab8bdab36138729fecdc8ca109539
   languageName: node
   linkType: hard
 
@@ -5611,7 +5564,7 @@ typescript@^4.3.2:
     stylelint-config-standard: ^22.0.0
     typescript: ^4.3.2
     vite: ^2.3.7
-    vite-plugin-checker: ^0.1.0
+    vite-plugin-ts-checker: ^0.1.5
     vite-plugin-windicss: ^1.1.0
     vue: ^3.1.1
     windicss: ^3.1.3
