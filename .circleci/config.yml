@@ -16,6 +16,7 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
+          override-ci-command: yarn install --immutable --immutable-cache
       - run:
           name: Lint code
           command: yarn lint:code
@@ -27,6 +28,7 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
+          override-ci-command: yarn install --immutable --immutable-cache
       - run:
           name: Lint style
           command: yarn lint:style
@@ -38,12 +40,13 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
+          override-ci-command: yarn install --immutable --immutable-cache
       - run:
           name: Build (production)
           command: yarn build
 
 workflows:
-  sample:
+  verification:
     jobs:
       - lint-code
       - lint-style
