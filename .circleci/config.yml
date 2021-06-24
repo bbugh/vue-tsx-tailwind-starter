@@ -2,11 +2,21 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-orbs:
-  # The Node.js orb contains a set of prepackaged CircleCI configuration you can utilize
-  # Orbs reduce the amount of configuration required for common tasks.
-  # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
-  node: circleci/node@4.1
+# orbs:
+#   # The Node.js orb contains a set of prepackaged CircleCI configuration you can utilize
+#   # Orbs reduce the amount of configuration required for common tasks.
+#   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
+#   node: circleci/node@4.1
+
+commands:
+  restore_immutable_yarn_cache:
+    steps:
+      - restore_cache:
+          name: Restore cached lock file
+          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
+      - run:
+          name: Yarn install
+          command: yarn install --immutable --immutable-cache
 
 jobs:
   setup-yarn:
@@ -31,9 +41,7 @@ jobs:
       - image: cimg/node:15.1
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
-          override-ci-command: yarn install --immutable
+      - restore_immutable_yarn_cache
       - run:
           name: Lint code
           command: yarn lint:code
@@ -43,12 +51,7 @@ jobs:
       - image: cimg/node:15.1
     steps:
       - checkout
-      - restore_cache:
-          name: Restore cached lock file
-          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
-      - run:
-          name: Yarn install
-          command: yarn install --immutable --immutable-cache
+      - restore_immutable_yarn_cache
       - run:
           name: Lint style
           command: yarn lint:style
@@ -58,12 +61,7 @@ jobs:
       - image: cimg/node:15.1
     steps:
       - checkout
-      - restore_cache:
-          name: Restore cached lock file
-          key: v2-yarn-lock-file-{{ checksum "yarn.lock" }}
-      - run:
-          name: Yarn install
-          command: yarn install --immutable --immutable-cache
+      - restore_immutable_yarn_cache
       - run:
           name: Build (production)
           command: yarn build
