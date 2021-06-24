@@ -1,7 +1,6 @@
 name: Build and test
 
-on:
-  push:
+on: push
 
 permissions: read-all
 
@@ -11,8 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Yarn install
-        uses: bahmutov/npm-install@86410ebd5cb59eff8f561d3ea64b9cefdb54de8c # v1.7.7
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+      - uses: bbugh/cache@2c6138afa1edfcfde8a4c8f3f2db596fbc00ae8b # fork that always saves cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Lint
         run: yarn lint:code
 
@@ -20,9 +29,18 @@ jobs:
     name: Lint styles
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Yarn install
-        uses: bahmutov/npm-install@86410ebd5cb59eff8f561d3ea64b9cefdb54de8c # v1.7.7
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+      - uses: bbugh/cache@2c6138afa1edfcfde8a4c8f3f2db596fbc00ae8b # fork that always saves cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Lint
         run: yarn lint:style
 
@@ -31,7 +49,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Yarn install
-        uses: bahmutov/npm-install@86410ebd5cb59eff8f561d3ea64b9cefdb54de8c # v1.7.7
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+      - uses: bbugh/cache@2c6138afa1edfcfde8a4c8f3f2db596fbc00ae8b # fork that always saves cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Build
         run: yarn build
