@@ -14,5 +14,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "css.validate": false, // Handled by stylelint
+  // Handled by stylelint
+  "css.validate": false,
+  // Stylelint tries to lint a huge list of different file types
+  "stylelint.validate": [
+    "css"
+  ],
 }
