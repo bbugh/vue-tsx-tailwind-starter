@@ -625,7 +625,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^15.12.5":
+"@types/node@npm:15.12.5":
   version: 15.12.5
   resolution: "@types/node@npm:15.12.5"
   checksum: 42485de7a0b7277ddaae25b36ab4174fc8f23e8a5de9ccaedd002ecec17135c48227a5e09088d181c2bc34fe6b2064feb4a468954372076fd8addac2f72dad7e
@@ -660,7 +660,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.28.0":
+"@typescript-eslint/eslint-plugin@npm:4.28.0":
   version: 4.28.0
   resolution: "@typescript-eslint/eslint-plugin@npm:4.28.0"
   dependencies:
@@ -697,7 +697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.28.0":
+"@typescript-eslint/parser@npm:4.28.0":
   version: 4.28.0
   resolution: "@typescript-eslint/parser@npm:4.28.0"
   dependencies:
@@ -759,7 +759,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-vue-jsx@npm:^1.1.6":
+"@vitejs/plugin-vue-jsx@npm:1.1.6":
   version: 1.1.6
   resolution: "@vitejs/plugin-vue-jsx@npm:1.1.6"
   dependencies:
@@ -773,7 +773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-vue@npm:^1.2.4":
+"@vitejs/plugin-vue@npm:1.2.4":
   version: 1.2.4
   resolution: "@vitejs/plugin-vue@npm:1.2.4"
   peerDependencies:
@@ -829,7 +829,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:^3.1.2":
+"@vue/compiler-sfc@npm:3.1.2":
   version: 3.1.2
   resolution: "@vue/compiler-sfc@npm:3.1.2"
   dependencies:
@@ -1436,7 +1436,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^6.2.0":
+"concurrently@npm:6.2.0":
   version: 6.2.0
   resolution: "concurrently@npm:6.2.0"
   dependencies:
@@ -1827,7 +1827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.3.0":
+"eslint-config-prettier@npm:8.3.0":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
@@ -1838,7 +1838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.4.0":
+"eslint-plugin-prettier@npm:3.4.0":
   version: 3.4.0
   resolution: "eslint-plugin-prettier@npm:3.4.0"
   dependencies:
@@ -1853,7 +1853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^7.12.1":
+"eslint-plugin-vue@npm:7.12.1":
   version: 7.12.1
   resolution: "eslint-plugin-vue@npm:7.12.1"
   dependencies:
@@ -1911,7 +1911,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.29.0":
+"eslint@npm:7.29.0":
   version: 7.29.0
   resolution: "eslint@npm:7.29.0"
   dependencies:
@@ -2535,7 +2535,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^6.0.0":
+"husky@npm:6.0.0":
   version: 6.0.0
   resolution: "husky@npm:6.0.0"
   bin:
@@ -2954,7 +2954,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^11.0.0":
+"lint-staged@npm:11.0.0":
   version: 11.0.0
   resolution: "lint-staged@npm:11.0.0"
   dependencies:
@@ -4067,7 +4067,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:^6.7.0":
+"postcss-preset-env@npm:6.7.0":
   version: 6.7.0
   resolution: "postcss-preset-env@npm:6.7.0"
   dependencies:
@@ -4246,6 +4246,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:8.3.5":
+  version: 8.3.5
+  resolution: "postcss@npm:8.3.5"
+  dependencies:
+    colorette: ^1.2.2
+    nanoid: ^3.1.23
+    source-map-js: ^0.6.2
+  checksum: 87dc16efcf40286fad4ded0a433497ddbc55dfad3d7ddb200ba9c0761ec376280fa2c06a522628583c9284def85894c52bc361cffedf0679f4936370c084a145
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^7.0.14, postcss@npm:^7.0.17, postcss@npm:^7.0.2, postcss@npm:^7.0.32, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
   version: 7.0.35
   resolution: "postcss@npm:7.0.35"
@@ -4290,17 +4301,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.5":
-  version: 8.3.5
-  resolution: "postcss@npm:8.3.5"
-  dependencies:
-    colorette: ^1.2.2
-    nanoid: ^3.1.23
-    source-map-js: ^0.6.2
-  checksum: 87dc16efcf40286fad4ded0a433497ddbc55dfad3d7ddb200ba9c0761ec376280fa2c06a522628583c9284def85894c52bc361cffedf0679f4936370c084a145
-  languageName: node
-  linkType: hard
-
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -4317,7 +4317,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2":
+"prettier@npm:2.3.2":
   version: 2.3.2
   resolution: "prettier@npm:2.3.2"
   bin:
@@ -4985,7 +4985,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-standard@npm:^22.0.0":
+"stylelint-config-standard@npm:22.0.0":
   version: 22.0.0
   resolution: "stylelint-config-standard@npm:22.0.0"
   dependencies:
@@ -4996,7 +4996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^13.13.1":
+"stylelint@npm:13.13.1":
   version: 13.13.1
   resolution: "stylelint@npm:13.13.1"
   dependencies:
@@ -5258,7 +5258,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-typescript@^4.3.4:
+typescript@4.3.4:
   version: 4.3.4
   resolution: "typescript@npm:4.3.4"
   bin:
@@ -5268,7 +5268,7 @@ typescript@^4.3.4:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.3.4#builtin<compat/typescript>":
+"typescript@patch:typescript@4.3.4#builtin<compat/typescript>":
   version: 4.3.4
   resolution: "typescript@patch:typescript@npm%3A4.3.4#builtin<compat/typescript>::version=4.3.4&hash=ddfc1b"
   bin:
@@ -5397,7 +5397,7 @@ typescript@^4.3.4:
   languageName: node
   linkType: hard
 
-"vite-plugin-ts-checker@npm:^0.1.5":
+"vite-plugin-ts-checker@npm:0.1.5":
   version: 0.1.5
   resolution: "vite-plugin-ts-checker@npm:0.1.5"
   dependencies:
@@ -5408,7 +5408,7 @@ typescript@^4.3.4:
   languageName: node
   linkType: hard
 
-"vite-plugin-windicss@npm:^1.1.1":
+"vite-plugin-windicss@npm:1.1.1":
   version: 1.1.1
   resolution: "vite-plugin-windicss@npm:1.1.1"
   dependencies:
@@ -5422,7 +5422,7 @@ typescript@^4.3.4:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.3.8":
+"vite@npm:2.3.8":
   version: 2.3.8
   resolution: "vite@npm:2.3.8"
   dependencies:
@@ -5460,34 +5460,34 @@ typescript@^4.3.4:
   version: 0.0.0-use.local
   resolution: "vue-tsx@workspace:."
   dependencies:
-    "@types/node": ^15.12.5
-    "@typescript-eslint/eslint-plugin": ^4.28.0
-    "@typescript-eslint/parser": ^4.28.0
-    "@vitejs/plugin-vue": ^1.2.4
-    "@vitejs/plugin-vue-jsx": ^1.1.6
-    "@vue/compiler-sfc": ^3.1.2
-    concurrently: ^6.2.0
-    eslint: ^7.29.0
-    eslint-config-prettier: ^8.3.0
-    eslint-plugin-prettier: ^3.4.0
-    eslint-plugin-vue: ^7.12.1
-    husky: ^6.0.0
-    lint-staged: ^11.0.0
-    postcss: ^8.3.5
-    postcss-preset-env: ^6.7.0
-    prettier: ^2.3.2
-    stylelint: ^13.13.1
-    stylelint-config-standard: ^22.0.0
-    typescript: ^4.3.4
-    vite: ^2.3.8
-    vite-plugin-ts-checker: ^0.1.5
-    vite-plugin-windicss: ^1.1.1
-    vue: ^3.1.2
-    windicss: ^3.1.3
+    "@types/node": 15.12.5
+    "@typescript-eslint/eslint-plugin": 4.28.0
+    "@typescript-eslint/parser": 4.28.0
+    "@vitejs/plugin-vue": 1.2.4
+    "@vitejs/plugin-vue-jsx": 1.1.6
+    "@vue/compiler-sfc": 3.1.2
+    concurrently: 6.2.0
+    eslint: 7.29.0
+    eslint-config-prettier: 8.3.0
+    eslint-plugin-prettier: 3.4.0
+    eslint-plugin-vue: 7.12.1
+    husky: 6.0.0
+    lint-staged: 11.0.0
+    postcss: 8.3.5
+    postcss-preset-env: 6.7.0
+    prettier: 2.3.2
+    stylelint: 13.13.1
+    stylelint-config-standard: 22.0.0
+    typescript: 4.3.4
+    vite: 2.3.8
+    vite-plugin-ts-checker: 0.1.5
+    vite-plugin-windicss: 1.1.1
+    vue: 3.1.2
+    windicss: 3.1.3
   languageName: unknown
   linkType: soft
 
-"vue@npm:^3.1.2":
+"vue@npm:3.1.2":
   version: 3.1.2
   resolution: "vue@npm:3.1.2"
   dependencies:
@@ -5529,7 +5529,7 @@ typescript@^4.3.4:
   languageName: node
   linkType: hard
 
-"windicss@npm:^3.1.3":
+"windicss@npm:3.1.3, windicss@npm:^3.1.3":
   version: 3.1.3
   resolution: "windicss@npm:3.1.3"
   bin:
