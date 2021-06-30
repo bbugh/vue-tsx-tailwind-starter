@@ -1,8 +1,9 @@
 import { defineComponent } from "vue";
+import { I18n } from "./i18n";
 
 const App = defineComponent({
   setup() {
-    return () => <div class="bg-red-300">Hello, world!</div>;
+    return () => <div class="bg-red-300">{I18n.global.t("hello")}</div>;
   },
 });
 

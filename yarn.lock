@@ -514,6 +514,76 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@intlify/core-base@npm:9.1.6":
+  version: 9.1.6
+  resolution: "@intlify/core-base@npm:9.1.6"
+  dependencies:
+    "@intlify/devtools-if": 9.1.6
+    "@intlify/message-compiler": 9.1.6
+    "@intlify/message-resolver": 9.1.6
+    "@intlify/runtime": 9.1.6
+    "@intlify/shared": 9.1.6
+    "@intlify/vue-devtools": 9.1.6
+  checksum: e6ca1b638194135b0078b986a3e0fffd6bfeecc6e2b2f38858407479be0bbd228ff04d482450e6548f925e213497172d00e5f3cbbfb55badf3bdf2ea409ca6a7
+  languageName: node
+  linkType: hard
+
+"@intlify/devtools-if@npm:9.1.6":
+  version: 9.1.6
+  resolution: "@intlify/devtools-if@npm:9.1.6"
+  dependencies:
+    "@intlify/shared": 9.1.6
+  checksum: 24ba2e6a11cdf4e22f2cdc27b722c40dbc934ecb651e777e154d4ca9c2a8e677cd941d95c65ab6217ea2694367dbe71bec62b644a09225060af7d518eb8acf86
+  languageName: node
+  linkType: hard
+
+"@intlify/message-compiler@npm:9.1.6":
+  version: 9.1.6
+  resolution: "@intlify/message-compiler@npm:9.1.6"
+  dependencies:
+    "@intlify/message-resolver": 9.1.6
+    "@intlify/shared": 9.1.6
+    source-map: 0.6.1
+  checksum: 5080d962b80d94c90eef8bb29770c044f9e1c3cb094ef507c9e5859194ece19577f3c10cfae44dc682924fefe8d5f5651ef0d9bbe2692a75c5d522eed5830ed6
+  languageName: node
+  linkType: hard
+
+"@intlify/message-resolver@npm:9.1.6":
+  version: 9.1.6
+  resolution: "@intlify/message-resolver@npm:9.1.6"
+  checksum: ffd9a080be2f807ad598cc94e772dc1b4019688939bb86f3d44ca407f1e89510d766d3957f6c4bc879c94e0e9db0939a9c463e847ede99558f14bedc0dc1018b
+  languageName: node
+  linkType: hard
+
+"@intlify/runtime@npm:9.1.6":
+  version: 9.1.6
+  resolution: "@intlify/runtime@npm:9.1.6"
+  dependencies:
+    "@intlify/message-compiler": 9.1.6
+    "@intlify/message-resolver": 9.1.6
+    "@intlify/shared": 9.1.6
+  checksum: 8a3522d2f5f3f6884506b736708dee958b07b40b12a60e5d6e15c98e18f20819d32a0d222f2e5488d41ab63aad67fef5e54a222aac586bcd799bf5738674216f
+  languageName: node
+  linkType: hard
+
+"@intlify/shared@npm:9.1.6":
+  version: 9.1.6
+  resolution: "@intlify/shared@npm:9.1.6"
+  checksum: 286c38d788605bd53d319404cc19c0ebac247903a2328c2489e17d00c521d11cc2af77ef1bd8457bd5bb1d30af747e175051e2eb9f9c08f3909d550d70ea98ec
+  languageName: node
+  linkType: hard
+
+"@intlify/vue-devtools@npm:9.1.6":
+  version: 9.1.6
+  resolution: "@intlify/vue-devtools@npm:9.1.6"
+  dependencies:
+    "@intlify/message-resolver": 9.1.6
+    "@intlify/runtime": 9.1.6
+    "@intlify/shared": 9.1.6
+  checksum: 45c844f7b105f096ea5b29bd58c15bb5611a4256cc27af5f36b373ed791390f639ded2796318848600816dea33027468e3b8da6599cc0f58dd5250a63cabbe70
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4
   resolution: "@nodelib/fs.scandir@npm:2.1.4"
@@ -625,7 +695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:15.12.5":
+"@types/node@npm:^15.12.5":
   version: 15.12.5
   resolution: "@types/node@npm:15.12.5"
   checksum: 42485de7a0b7277ddaae25b36ab4174fc8f23e8a5de9ccaedd002ecec17135c48227a5e09088d181c2bc34fe6b2064feb4a468954372076fd8addac2f72dad7e
@@ -660,12 +730,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:4.28.1":
-  version: 4.28.1
-  resolution: "@typescript-eslint/eslint-plugin@npm:4.28.1"
+"@typescript-eslint/eslint-plugin@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/eslint-plugin@npm:4.28.0"
   dependencies:
-    "@typescript-eslint/experimental-utils": 4.28.1
-    "@typescript-eslint/scope-manager": 4.28.1
+    "@typescript-eslint/experimental-utils": 4.28.0
+    "@typescript-eslint/scope-manager": 4.28.0
     debug: ^4.3.1
     functional-red-black-tree: ^1.0.1
     regexpp: ^3.1.0
@@ -677,66 +747,66 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 79a794ff44794c3260d0b57f8b9a25e46e87a93eb151c2e2e1c8822c8fb373fe07207edf3c8cd6e21864142214e36d233fc5502d60a2a979eb16e02fce0d9fe6
+  checksum: 76ebb9a0e6c4982b0af1b09c8b94224618c1a6a969c8d62cf105ddb6a2dbbbdc898fb2ccca2b252447829fc7e626316fae02ce633ab2b49ca994fd8103560937
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:4.28.1":
-  version: 4.28.1
-  resolution: "@typescript-eslint/experimental-utils@npm:4.28.1"
+"@typescript-eslint/experimental-utils@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/experimental-utils@npm:4.28.0"
   dependencies:
     "@types/json-schema": ^7.0.7
-    "@typescript-eslint/scope-manager": 4.28.1
-    "@typescript-eslint/types": 4.28.1
-    "@typescript-eslint/typescript-estree": 4.28.1
+    "@typescript-eslint/scope-manager": 4.28.0
+    "@typescript-eslint/types": 4.28.0
+    "@typescript-eslint/typescript-estree": 4.28.0
     eslint-scope: ^5.1.1
     eslint-utils: ^3.0.0
   peerDependencies:
     eslint: "*"
-  checksum: 8e10696825812dee45dc7fd0292eefd527c59886b9fb922dd2da49201da6b1746d4b48abfdc32c33c1489a4eb7409df56c7371c76e5ea723c4e6d99457ec98a0
+  checksum: 05fe66bc35a16f162cc04c25eb2f705a7239d866e4e340e66d0b2d6da4e0faf3f72dc485bd4d8f934fd1b117b4bd7f4ee7e7c5d7ff53bc1c13a3fcbc61518846
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:4.28.1":
-  version: 4.28.1
-  resolution: "@typescript-eslint/parser@npm:4.28.1"
+"@typescript-eslint/parser@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/parser@npm:4.28.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 4.28.1
-    "@typescript-eslint/types": 4.28.1
-    "@typescript-eslint/typescript-estree": 4.28.1
+    "@typescript-eslint/scope-manager": 4.28.0
+    "@typescript-eslint/types": 4.28.0
+    "@typescript-eslint/typescript-estree": 4.28.0
     debug: ^4.3.1
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: ab7c7fef7477cd1506041cba0ba36ad003c74214f8a96836a742309cc471b12979b622edf98915b0fad45a257466b291ca9924ae5c7b38316a5fd23d1d634070
+  checksum: c7132cc4930cd763acd0a5c751c2e7fef9aedee9c93a4ee0f1d1b40f19439b3567f1b32edca97dcce00a26da6d90ddf4c7b77ad1f9183ad73a2364b48270f5a4
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:4.28.1":
-  version: 4.28.1
-  resolution: "@typescript-eslint/scope-manager@npm:4.28.1"
+"@typescript-eslint/scope-manager@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/scope-manager@npm:4.28.0"
   dependencies:
-    "@typescript-eslint/types": 4.28.1
-    "@typescript-eslint/visitor-keys": 4.28.1
-  checksum: 2c2f4858f497bf01ba878fe5ec6181a1aa43a57750b52bef8b6e3c3ba65ea28f4209f4b794e8dec9b2f7b39c54a830d2004231bae2aa9e9b8d9a1623be4ce917
+    "@typescript-eslint/types": 4.28.0
+    "@typescript-eslint/visitor-keys": 4.28.0
+  checksum: 4b0ff18be095c5282eda9f55565d95e6273b54bcabc24a685ed0099c573127ab3773e93088613e286d9c365df7f9d57950a6d9b90c3494ac70e4bda423e7b12d
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:4.28.1":
-  version: 4.28.1
-  resolution: "@typescript-eslint/types@npm:4.28.1"
-  checksum: 8748138865df0a167b6260158fcaa3fc26e3f442065168f762b63e64e7dff065a1175822df0e0ecd0d555cac2756472ae0de64b59ecbaee484be9c4c8409da90
+"@typescript-eslint/types@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/types@npm:4.28.0"
+  checksum: 13e027c87f18d7b046e671f583f446683dfeadb3027d567b29879878dc34def188d983c9e89ca33532d2efaff69314fb45452c6e63fc248f2e297ccb319b2264
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:4.28.1":
-  version: 4.28.1
-  resolution: "@typescript-eslint/typescript-estree@npm:4.28.1"
+"@typescript-eslint/typescript-estree@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/typescript-estree@npm:4.28.0"
   dependencies:
-    "@typescript-eslint/types": 4.28.1
-    "@typescript-eslint/visitor-keys": 4.28.1
+    "@typescript-eslint/types": 4.28.0
+    "@typescript-eslint/visitor-keys": 4.28.0
     debug: ^4.3.1
     globby: ^11.0.3
     is-glob: ^4.0.1
@@ -745,17 +815,17 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 26dfe831a9d5b915c9c4e9c110c0c815ce3f8a9890e61ed46d187f967d3192047e793d7dc771f35cf6828a9f4b9ddf20f06b4f0418b3346fa11617facd1d1969
+  checksum: 4994d349569e8bba31201346bf56bb18c0b5003958dc02eb1d3b6d3b36819dfbe1e96bb7b28e89bd001bc421660dd21ad69e8d0b1a1aa2ccfcefacd6b2e668d5
   languageName: node
   linkType: hard
 
-"@typescript-eslint/visitor-keys@npm:4.28.1":
-  version: 4.28.1
-  resolution: "@typescript-eslint/visitor-keys@npm:4.28.1"
+"@typescript-eslint/visitor-keys@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/visitor-keys@npm:4.28.0"
   dependencies:
-    "@typescript-eslint/types": 4.28.1
+    "@typescript-eslint/types": 4.28.0
     eslint-visitor-keys: ^2.0.0
-  checksum: 85c22a0374952a258cfbce3fb1802fc41545f4c97319a057c615b4c6c5cb9efa587e7574adc71d0fa7b35790b5d1d5e17580cc27d57f819627906acf292f810c
+  checksum: 7b736df70b87c2232c68b59a4eb471eb9d74a69795b72df4b548fe51939676f123e6dba8d5aedf8ef64ec86b64759980b45434333771026a7c2020e68cc425e1
   languageName: node
   linkType: hard
 
@@ -863,6 +933,13 @@ __metadata:
     "@vue/compiler-dom": 3.1.2
     "@vue/shared": 3.1.2
   checksum: 29f155e42993419772d2e90c0b8dfa875111a70366bc4861b83425298940e9e51a4d154284587a7836ce01c54c302b38d83ba36f966274aeb260f4de34551229
+  languageName: node
+  linkType: hard
+
+"@vue/devtools-api@npm:^6.0.0-beta.7":
+  version: 6.0.0-beta.15
+  resolution: "@vue/devtools-api@npm:6.0.0-beta.15"
+  checksum: 6e76f02a9aa34cd8712c4897569ebf69f6ddb387e44d5162a98a1b5dc4528c655689eade4453b88f2479ba75e58fb10aa7333c8bb6f4f6e0e9e91fe6f8b780eb
   languageName: node
   linkType: hard
 
@@ -4757,17 +4834,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"source-map@npm:0.6.1, source-map@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "source-map@npm:0.6.1"
+  checksum: 8647829a0611724114022be455ca1c8a2c8ae61df81c5b3667d9b398207226a1e21174fb7bbf0b4dbeb27ac358222afb5a14f1c74a62a62b8883b012e5eb1270
+  languageName: node
+  linkType: hard
+
 "source-map@npm:^0.5.0":
   version: 0.5.7
   resolution: "source-map@npm:0.5.7"
   checksum: 737face96577a2184a42f141607fcc2c9db5620cb8517ae8ab3924476defa138fc26b0bab31e98cbd6f19211ecbf78400b59f801ff7a0f87aa9faa79f7433e10
-  languageName: node
-  linkType: hard
-
-"source-map@npm:^0.6.1":
-  version: 0.6.1
-  resolution: "source-map@npm:0.6.1"
-  checksum: 8647829a0611724114022be455ca1c8a2c8ae61df81c5b3667d9b398207226a1e21174fb7bbf0b4dbeb27ac358222afb5a14f1c74a62a62b8883b012e5eb1270
   languageName: node
   linkType: hard
 
@@ -5456,13 +5533,27 @@ typescript@4.3.4:
   languageName: node
   linkType: hard
 
+"vue-i18n@npm:next":
+  version: 9.1.6
+  resolution: "vue-i18n@npm:9.1.6"
+  dependencies:
+    "@intlify/core-base": 9.1.6
+    "@intlify/shared": 9.1.6
+    "@intlify/vue-devtools": 9.1.6
+    "@vue/devtools-api": ^6.0.0-beta.7
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: 6da7c84c88bbe2adbd013801d17434e68a1549ff87196b49bc5f08dea593a3cfd61fac3b2f74f93616200bf49d66dac7cd0cc5753a635e0b39753c4acd1930af
+  languageName: node
+  linkType: hard
+
 "vue-tsx@workspace:.":
   version: 0.0.0-use.local
   resolution: "vue-tsx@workspace:."
   dependencies:
-    "@types/node": 15.12.5
-    "@typescript-eslint/eslint-plugin": 4.28.1
-    "@typescript-eslint/parser": 4.28.1
+    "@types/node": ^15.12.5
+    "@typescript-eslint/eslint-plugin": 4.28.0
+    "@typescript-eslint/parser": 4.28.0
     "@vitejs/plugin-vue": 1.2.4
     "@vitejs/plugin-vue-jsx": 1.1.6
     "@vue/compiler-sfc": 3.1.2
@@ -5483,6 +5574,7 @@ typescript@4.3.4:
     vite-plugin-ts-checker: 0.1.5
     vite-plugin-windicss: 1.1.1
     vue: 3.1.2
+    vue-i18n: next
     windicss: 3.1.3
   languageName: unknown
   linkType: soft
