@@ -1,15 +1,4 @@
 {
-  // Yarn 2
-  "eslint.nodePath": ".yarn/sdks",
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
-  "search.exclude": {
-    "**/.pnp.*": true,
-    "**/.yarn": true
-  },
-  "stylelint.stylelintPath": ".yarn/sdks/stylelint/lib/index.js",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
-
   // Editor settings
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
