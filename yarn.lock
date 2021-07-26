@@ -921,29 +921,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@windicss/config@npm:1.2.4":
-  version: 1.2.4
-  resolution: "@windicss/config@npm:1.2.4"
+"@windicss/config@npm:1.2.5":
+  version: 1.2.5
+  resolution: "@windicss/config@npm:1.2.5"
   dependencies:
     debug: ^4.3.2
     jiti: ^1.10.1
     windicss: ^3.1.4
-  checksum: c08a1ccdd3f395ecf7fae6c04f82d07924e6ed7cd929b69eb1d043b50f3e87f5a73980f4b41fae3f6bc60b2867e732e59d00f01ad19efd93dbb33392d869f599
+  checksum: c6a60b118adc1cb55fd3de08450d36ba9eff08d37bc9ddc8ad657ec8d598595e64f1398620b2ba91bac14601eced6deb00a3eb57e95d75347b5230e06dcb9bca
   languageName: node
   linkType: hard
 
-"@windicss/plugin-utils@npm:1.2.4":
-  version: 1.2.4
-  resolution: "@windicss/plugin-utils@npm:1.2.4"
+"@windicss/plugin-utils@npm:1.2.5":
+  version: 1.2.5
+  resolution: "@windicss/plugin-utils@npm:1.2.5"
   dependencies:
     "@antfu/utils": ^0.2.4
-    "@windicss/config": 1.2.4
+    "@windicss/config": 1.2.5
     debug: ^4.3.2
     fast-glob: ^3.2.6
     magic-string: ^0.25.7
     micromatch: ^4.0.4
     windicss: ^3.1.4
-  checksum: c3b99edd1eb33e2eb31e0e899cea9c27d7bfa8cd37d21da2c1992dc794fc9c018558edee3bf3ee2163dff8c93f45dfaa294516f85e8405e22ddde58bb05e53ea
+  checksum: f113db5a778cca00b1dcccb6cf93565ed03d8ec457e38a2419c4b401f97f2920527e6f8ed94c1a2d9a710b8dabf195ad20434a079276f4cd02391f1b62eacd60
   languageName: node
   linkType: hard
 
@@ -5451,17 +5451,17 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"vite-plugin-windicss@npm:1.2.4":
-  version: 1.2.4
-  resolution: "vite-plugin-windicss@npm:1.2.4"
+"vite-plugin-windicss@npm:1.2.5":
+  version: 1.2.5
+  resolution: "vite-plugin-windicss@npm:1.2.5"
   dependencies:
-    "@windicss/plugin-utils": 1.2.4
+    "@windicss/plugin-utils": 1.2.5
     chalk: ^4.1.1
     debug: ^4.3.2
     windicss: ^3.1.4
   peerDependencies:
     vite: ^2.0.1
-  checksum: 2b6af0e7e5b8e3006bf47512b5550af97b064a6ea80b018f94547400fac1e614287caa40e7471b0cdf4d3fcdede7d8e56fa75047e2804cf007eb3d35b5b65db6
+  checksum: ed14396aab88d2f93bcf515a3946d33cdb98f7004734835aba77a9594756e49a768e92e224f93532526c157a1d30b1b2dbb27a2bdd92c461000ac26d46a7a4fe
   languageName: node
   linkType: hard
 
@@ -5524,7 +5524,7 @@ typescript@4.3.5:
     typescript: 4.3.5
     vite: 2.3.8
     vite-plugin-ts-checker: 0.1.5
-    vite-plugin-windicss: 1.2.4
+    vite-plugin-windicss: 1.2.5
     vue: 3.1.5
     windicss: 3.1.5
   languageName: unknown
