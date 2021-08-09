@@ -5637,7 +5637,7 @@ typescript@4.3.5:
     vite-plugin-ts-checker: 0.1.5
     vite-plugin-windicss: 1.2.7
     vue: 3.1.5
-    windicss: 3.1.5
+    windicss: 3.1.7
   languageName: unknown
   linkType: soft
 
@@ -5683,12 +5683,12 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"windicss@npm:3.1.5":
-  version: 3.1.5
-  resolution: "windicss@npm:3.1.5"
+"windicss@npm:3.1.7":
+  version: 3.1.7
+  resolution: "windicss@npm:3.1.7"
   bin:
     windicss: cli/index.js
-  checksum: 2eede3041c7a00f7d9b29513341102f01966531f667337733cc9c50e113d79e14aec8e56ec84606b0380f2dd09023a88ee43847fc9def95354e3332b66cec8b4
+  checksum: a0f24aee0ee30b92a91f351c9539b5ac458aa5c6348011d7feab1b72f08fbd2401cbc1f40f5e4f71c0e2f86e38e2f3f8d7ab50f620b6b32381d729c703f6bf07
   languageName: node
   linkType: hard
 
